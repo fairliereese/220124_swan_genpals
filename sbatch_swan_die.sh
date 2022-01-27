@@ -18,6 +18,6 @@ i=$SLURM_ARRAY_TASK_ID
 test=`head -${i} $ifile | tail -1 | cut -f1`
 cond1=`head -${i} $ifile | tail -1 | cut -f2`
 cond2=`head -${i} $ifile | tail -1 | cut -f3`
-fname=`head -${i} $ifile | tail -1 | cut -f44`
+fname=`head -${i} $ifile | tail -1 | cut -f4`
 
 python swan_die.py $test $cond1 $cond2 $fname
