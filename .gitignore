@@ -1,3 +1,4 @@
+*.p
 *gtf
 *tsv
 *ipynb_checkpoints*

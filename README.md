@@ -17,3 +17,17 @@ mv ENCFF692TSX.gtf.gz sn_mt.gtf.gz
 ```bash
 gunzip *gtf.gz
 ```
+
+## Download reference annotation
+```bash
+wget https://www.encodeproject.org/files/gencode.vM21.primary_assembly.annotation_UCSC_names/@@download/gencode.vM21.primary_assembly.annotation_UCSC_names.gtf.gz
+gunzip *gz
+```
+
+## Create SwanGraph
+Code is in `swan.ipynb`
+
+## Run DIE tests b/w celltypes 
+```bash
+bash swan_die.sh die_comparisons.tsv
+```
