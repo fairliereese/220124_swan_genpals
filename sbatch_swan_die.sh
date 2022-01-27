@@ -2,8 +2,8 @@
 #SBATCH --job-name=swan_die
 #SBATCH -n 16
 #SBATCH -A SEYEDAM_LAB
-#SBATCH -o processing/%x.o%A_%a
-#SBATCH -e processing/%x.e%A_%a
+#SBATCH -o %x.o%A_%a
+#SBATCH -e %x.e%A_%a
 #SBATCH --partition=standard
 #SBATCH --time=7-0
 #SBATCH --mail-type=START,END
