@@ -20,9 +20,4 @@ cond1=`head -${i} $ifile | tail -1 | cut -f2`
 cond2=`head -${i} $ifile | tail -1 | cut -f3`
 fname=`head -${i} $ifile | tail -1 | cut -f44`
 
-# make directories
-odir=~/mortazavi_lab/data/mousewg/lr_bulk/die/
-fname=${odir}/${fname}
-d=~/mortazavi_lab/data/mousewg/scripts/
-
-python ${d}swan_die.py $test $cond1 $cond2 $fname
+python swan_die.py $test $cond1 $cond2 $fname
