@@ -16,4 +16,4 @@ fname = sys.argv[4]
 die, genes = sg.die_gene_test(kind=test,
                               obs_col='cell_type',
                               obs_conditions=[cond1, cond2])
-die.to_csv(fname, sep='\t')sss
+die.to_csv(fname, sep='\t')
